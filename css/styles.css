@@ -9,6 +9,21 @@
   --third-text-color: #ffffff;
   --fourth-text-color: #2196f3;
 }
+p,
+h1,
+h2,
+h3,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 
 body {
   font-family: "Raleway", sans-serif;
@@ -25,6 +40,22 @@ body {
 
 .header {
   background: var(--primary-title-color);
+  border-bottom: 1px solid var(--third-title-color);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-left: 0px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 32px 0 32px 0;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
   font-weight: bold;
@@ -32,6 +63,8 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
+  margin-left: 0px;
+  margin-right: 95px;
 }
 .logo {
   font-weight: bold;
@@ -39,6 +72,18 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--prymary-text-color);
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-list-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.header-item {
+  margin-right: 50px;
 }
 .header-link {
   font-weight: 500;
@@ -68,6 +113,7 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  margin-left: 52px;
 }
 .header-tel-link:hover,
 .header-tel-link:focus {
@@ -79,6 +125,11 @@ body {
 .section-one {
   background: var(--second-title-color);
 }
+.container-sec-one {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .section-one-list {
   font-family: Roboto;
   font-weight: 900;
@@ -87,6 +138,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-btn {
   background-color: var(--fourth-text-color);
@@ -102,14 +156,21 @@ body {
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-btn:hover,
 .main-btn:focus {
   background: #188ce8;
   color: var(--third-text-color);
 }
+
+/*--------sec2--------*/
+
 .section-two {
   background: var(--fourth-title-color);
+  padding: 94px 0 94px 0;
 }
 .sec-two-title {
   font-weight: bold;
@@ -118,6 +179,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--prymary-text-color);
+  margin-bottom: 10px;
 }
 .sec-two-text {
   font-weight: normal;
@@ -125,6 +187,15 @@ body {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  max-width: 270px;
+  margin-right: 30px;
+}
+.last {
+  margin-right: 0;
+}
+.about-us {
+  margin-top: 94px;
+  margin-left: 0;
 }
 .sec-two-about {
   font-weight: bold;
@@ -133,10 +204,21 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--prymary-text-color);
+  margin-top: 94px;
 }
+.sec-two-list {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+/*----sec3--------*/
 
 .section-three {
   background: var(--third-title-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .sec-three-title-one {
   font-weight: bold;
@@ -164,18 +246,32 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-top: 10px;
+}
+.sec-three-list {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.img-sec-three {
+  padding: 30px 60px;
+  border: 1px solid var(--second-text-color);
+  border-top: none;
 }
 
 /*--------footer--------*/
 
 .footer-page {
   background: var(--second-title-color);
+  padding: 60px 0 60px 0;
 }
 .logo-two {
   color: var(--third-text-color);
 }
 .footer-link {
   font-weight: normal;
+  margin-top: 9px;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -184,11 +280,26 @@ body {
 .footer-link:hover {
   color: var(--third-text-color);
 }
+.footer-list {
+  margin-top: 20px;
+}
 
 /*------main second page------*/
 
 .main {
   background: var(--third-title-color);
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.main-list {
+}
+.list-two {
+  display: flex;
+  align-items: center;
 }
 .list-btn {
   background: var(--primary-title-color);
