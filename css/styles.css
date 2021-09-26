@@ -35,6 +35,12 @@ body {
 .list {
   list-style: none;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /*-----header-------*/
 
@@ -42,16 +48,11 @@ body {
   background: var(--primary-title-color);
   border-bottom: 1px solid var(--third-title-color);
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-left: 0px;
-}
 .header-container {
   display: flex;
   align-items: center;
-  padding: 32px 0 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-nav {
   display: flex;
@@ -122,14 +123,13 @@ body {
 
 /*------main frist page-------*/
 
+/*--sec1----*/
+
 .section-one {
   background: var(--second-title-color);
-}
-.container-sec-one {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .section-one-list {
   font-family: Roboto;
   font-weight: 900;
@@ -170,7 +170,8 @@ body {
 
 .section-two {
   background: var(--fourth-title-color);
-  padding: 94px 0 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .sec-two-title {
   font-weight: bold;
@@ -205,12 +206,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--prymary-text-color);
   margin-top: 94px;
+  margin-bottom: 50px;
 }
 .sec-two-list {
   display: flex;
   align-items: center;
-  margin-top: 50px;
-  justify-content: space-between;
+}
+.img-sec-two {
+  margin-right: 30px;
 }
 
 /*----sec3--------*/
@@ -288,24 +291,29 @@ body {
 
 .main {
   background: var(--third-title-color);
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .menu-list {
   display: flex;
   align-items: center;
+  margin-left: 279px;
+  margin-right: 279px;
 }
-.main-list {
+.list-btn {
+  background: var(--primary-title-color);
+  margin-right: 8px;
 }
 .list-two {
   display: flex;
   align-items: center;
-}
-.list-btn {
-  background: var(--primary-title-color);
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 .list-img {
   background: var(--primary-title-color);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .title-list {
   font-weight: bold;
@@ -313,6 +321,9 @@ body {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--prymary-text-color);
+  margin-bottom: 4px;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 .text-list {
   font-weight: normal;
@@ -320,6 +331,10 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-top: 0px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 .btn {
   background: var(--fourth-title-color);
@@ -335,4 +350,15 @@ body {
 .btn:focus {
   background: var(--fourth-text-color);
   color: var(--third-text-color);
+}
+.last-bottom {
+  margin-bottom: 0px;
+}
+.last-right {
+  margin-right: 0px;
+}
+.border-list {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding-top: 20;
 }
