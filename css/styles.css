@@ -290,7 +290,7 @@ body {
 /*------main second page------*/
 
 .main {
-  background: var(--third-title-color);
+  background: var(--primary-title-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -339,9 +339,8 @@ body {
 .btn {
   background: var(--fourth-title-color);
   cursor: pointer;
-  width: 128px;
-  height: 38px;
-  left: 576px;
+  border: none;
+  padding: 6px 22px;
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
